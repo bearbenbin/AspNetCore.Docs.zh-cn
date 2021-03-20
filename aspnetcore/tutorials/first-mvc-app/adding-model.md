@@ -131,7 +131,7 @@ dotnet tool install --global dotnet-aspnet-codegenerator
 
 <a name="reg"></a>
 
-## <a name="register-the-database-context"></a>注册数据库上下文
+## <a name="register-the-database-context"></a>注册数据库环境
 
 ASP.NET Core 通过[依赖关系注入 (DI)](xref:fundamentals/dependency-injection) 生成。 在应用程序启动过程中，必须向 DI 注册服务（如 EF Core DB 上下文）。 需要这些服务（如 Razor 页面）的组件通过构造函数参数提供相应服务。 本教程的后续部分介绍了用于获取 DB 上下文实例的构造函数代码。 本部分会将数据库上下文注册到 DI 容器。
 
